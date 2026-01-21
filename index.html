@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Free Fire Items Library</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" type="image/svg+xml" href="/Items/x.svg">
+  <meta name="author" content="sulav gaming">
+  <meta name="og:title" content="Free Fire Items Library">
+  <meta property="og:image" content="/Items/x.png">
+  <meta name="google-site-verification" content="rGAvnzZZNi2vCrVzgxCi5ThkyD8gZwYLD5n8NGA6nyw" />
+  <meta name="google-adsense-account" content="ca-pub-2064426715179521">
+  <meta name="og:description" content="Search Free Fire game items by Name or description to retrieve item ID, Name & Details.">
+  <meta name="description" content="Free Fire is a multiplayer battle royale mobile game, developed and published by Garena for Android and iOS. Battle in Style and be the last survivor!">
+  <meta name="keywords" content="survival, last survivor, battle royale, free mobile game, garena game, craftland, ugc, sulavgcreator, ff craftland, sulav g Craftland, Craftland tutorial, sulavg, sulavGCreator, craftland tutorial site, free fire craftland, ff-item, Free Fire Info, FFInfo, FFItems, ffitems, ItemsFF, Free Fire Item site, FFItems, FF-Items, ff items library, ff items jinxx, ff items 0xme ff items dev, ff items site">
+  <link rel="apple-touch-icon" sizes="180x180" href="/Items/x.svg">
+  <link rel="icon" type="image/svg+xml" sizes="32x32" href="/Items/x.svg">
+  <link rel="icon" type="image/svg+xml" sizes="16x16" href="/Items/x.svg">
+  <link rel="mask-icon" href="/Items/x.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#FFBA00">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-55F3J8VB7D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "G-55F3J8VB7D");
+  </script>
+  <script language="javascript">document.write( unescape( '%3C%6C%69%6E%6B%20%72%65%6C%3D%22%73%74%79%6C%65%73%68%65%65%74%22%20%68%72%65%66%3D%22%2F%49%74%65%6D%73%2F%73%74%79%6C%65%2E%63%73%73%22%20%2F%3E' ))</script>
+</head>
+<body>
+  <div id="loadingOverlay">
+    <div class="loading-bar-wrapper">
+      <div class="loading-bar-container">
+        <div class="loading-bar" id="loadingBar"></div>
+      </div>
+      <div class="loading-percentage" id="loadingPercentage">0%</div>
+    </div>
+  </div>
+
+  <div class="loading-spinner" id="loadingSpinner">
+    <div class="spinner"></div>
+  </div>
+  
+  <div class="header" id="header" style="display: none;">
+    <h1 class="header-title">FREE FIRE ITEMS LIBRARY</h1>
+    <div class="input-container">
+      <div class="search-container">
+        <textarea id="search" placeholder="Search by Item Name, Item ID, Icon Name" oninput="filterIcons()"></textarea>
+        <img src="/icons/search.svg" class="search-icon" alt="Search Icon">
+      </div>
+      <div class="filter-container">
+        <select id="tagFilter" onchange="filterIcons()">
+          <option value="">All Tags</option>
+          <option value="OB52">OB52</option>
+          <option value="OB51">OB51</option>
+          <option value="OB50">OB50</option>
+          <option value="OB49">OB49</option>
+          <option value="OB48">OB48</option>
+          <option value="OB47">OB47</option>
+          <option value="OB46">OB46</option>
+          <option value="OB45">OB45</option>
+          <option value="OB44">OB44</option>
+          <option value="OB43">OB43</option>
+          <option value="OB42">OB42</option>
+          <option value="OB41">OB41</option>
+          <option value="OB40">OB40</option>
+          <option value="OB39">OB39</option>
+          <option value="OB38">OB38</option>
+          <option value="OB37">OB37</option>
+          <option value="OB36">OB36</option>
+          <option value="OB35">OB35</option>
+          <option value="OB34">OB34</option>
+          <option value="OB33">OB33</option>
+          <option value="OB32">OB32</option>
+          <option value="OB31">OB31</option>
+          <option value="OB30">OB30</option>
+          <option value="OB29">OB29</option>
+          <option value="OB28">OB28</option>
+          <option value="OB27">OB27</option>
+          <option value="OB26">OB26</option>
+          <option value="OB25">OB25</option>
+          <option value="OB24">OB24</option>
+          <option value="OB23">OB23</option>
+          <option value="OB22">OB22</option>
+          <option value="OB21">OB21</option>
+          <option value="OB20">OB20</option>
+          <option value="OB19">OB19</option>
+          <option value="OB18">OB18</option>
+          <option value="OB17">OB17</option>
+          <option value="OB16">OB16</option>
+          <option value="OB15">OB15</option>
+          <option value="OB14">OB14</option>
+          <option value="OB13">OB13</option>
+        </select>
+        <select id="typeFilter" onchange="filterIcons()">
+          <option value="">All Types</option>
+          <option value="Bundles">Bundles</option>
+          <option value="Top">Top</option>
+          <option value="Bottom">Bottom</option>
+          <option value="Shoe">Shoe</option>
+          <option value="Head">Head</option>
+          <option value="Mask">Mask</option>
+          <option value="Facepaint">Facepaint</option>
+          <option value="" disabled>------⏬------</option>
+          <option value="Weapon Skins">Weapon Skins</option>
+          <option value="Gloo Walls">Gloo Walls</option>
+          <option value="Fist Skins">Fist Skins</option>
+          <option value="Grenade Skin">Grenade Skin</option>
+          <option value="Final Shot">Final Shot</option>
+          <option value="Weapon Crates">Weapon Crates</option>
+          <option value="" disabled>------⏬------</option>
+          <option value="Emote">Emote</option>
+          <option value="Super Emote">Super Emote</option>
+          <option value="Arrival Animation">Arrival Animation</option>
+          <option value="Look Changer">Look Changer</option>
+          <option value="Vehicle Skins">Vehicle Skins</option>
+          <option value="Loot Box">Loot Box</option>
+          <option value="Bag Skins">Bag Skins</option>
+          <option value="Parachute">Parachute</option>
+          <option value="Skyboard">Skyboard</option>
+          <option value="Skywings">Skywings</option>
+          <option value="Hyper Book">Hyper Book</option>
+          <option value="" disabled>------⏬------</option>
+          <option value="Banners">Banners</option>
+          <option value="Avatars">Avatars</option>
+          <option value="Profile Pin">Profile Pin</option>
+          <option value="Battle Card">Battle Card</option>
+          <option value="Skill Skins">Skill Skins</option>
+          <option value="Music">Music</option>
+          <option value="Voice Packs">Voice Packs</option>
+          <option value="Photo Frame">Photo Frame</option>
+          <option value="Avatar Frame">Avatar Frame</option>
+          <option value="Photo Pose">Photo Pose</option>
+          <option value="Sticker">Stickers</option>
+          <option value="Titles">Titles</option>
+          <option value="" disabled>------⏬------</option>
+          <option value="Characters">Characters</option>
+          <option value="Pets">Pets</option>
+          <option value="Pet Skill">Pet Skill</option>
+          <option value="Pet Skin">Pet Skin</option>
+          <option value="Pet Emote">Pet Emote</option>
+          <option value="" disabled>------⏬------</option>
+          <option value="Bundle Create">Bundle Create</option>
+          <option value="Exchange Tokens">Exchange Tokens</option>
+          <option value="Loot Crates">Loot Crates</option>
+          <option value="Choice Crates">Choice Crates</option>
+          <option value="Vouchers">Vouchers</option>
+        </select>
+        <select id="rareFilter" onchange="filterIcons()">
+          <option value="">All Rare</option>
+          <option value="WHITE">⬜COMMON</option>
+          <option value="GREEN">🟩UNCOMMON</option>
+          <option value="BLUE">🟦RARE</option>
+          <option value="PURPLE">🟪EPIC</option>
+          <option value="PURPLE_PLUS">🟣EPIC++</option>
+          <option value="ORANGE">🟧MYTHIC</option>
+          <option value="ORANGE_PLUS">🟠MYTHIC++</option>
+          <option value="RED">🟥ARTIFACT</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container" id="container" style="display: none;">
+    <div class="grid-container" id="iconGrid"></div>
+    <div class="pagination-container">
+      <div class="pagination" id="pagination"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <img id="modalImage" alt="Item Image">
+      <p class="modal-text">
+        <b>Name:</b> <span id="modalName"></span><br>
+        <b>Item ID:</b> <span id="modalItemId"></span><br>
+        <b>Icon:</b> <span id="modalIconName"></span><br>
+        <b>Description:</b> <span id="modalDescription"></span>
+      </p>
+      <button class="modal-close" onclick="closeModal()">Tap to Close</button>
+    </div>
+  </div>
+  <script language="javascript">document.write( unescape( '%3C%73%63%72%69%70%74%20%73%72%63%3D%22%2F%49%74%65%6D%73%2F%73%63%72%69%70%74%2E%6A%73%22%3E%3C%2F%73%63%72%69%70%74%3E' ))</script>
+</body>
+</html>
